@@ -95,6 +95,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'core' / 'static']  # ← Static path added here
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # where collectstatic dumps everything
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
